@@ -10,4 +10,6 @@ import com.test.blood_donation_management.dto.Donor;
 public interface DonorRepository extends JpaRepository<Donor, Integer> {
 
 	public Donor findByEmail(String email);
+
+	public Donor findByPhone(long phone);
 }

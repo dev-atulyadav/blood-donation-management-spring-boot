@@ -9,6 +9,8 @@ public interface DonorDao {
 
 	public Donor saveDonorDao(Donor donor);
 
-	public Donor getDonorByEmail(String email);
+	public Donor getDonorByEmailDao(String email);
+
+	public Donor getDonorByPhoneDao(long phone);
 
 }

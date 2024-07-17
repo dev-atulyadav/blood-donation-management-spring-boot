@@ -22,8 +22,13 @@ public class DonorDaoImpli implements DonorDao {
 	}
 
 	@Override
-	public Donor getDonorByEmail(String email) {
+	public Donor getDonorByEmailDao(String email) {
 		return donorRepository.findByEmail(email);
+	}
+
+	@Override
+	public Donor getDonorByPhoneDao(long phone) {
+		return donorRepository.findByPhone(phone);
 	}
 
 }

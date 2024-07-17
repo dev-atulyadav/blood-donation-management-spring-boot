@@ -24,6 +24,7 @@ public class Donor {
 	@Column(unique = true, nullable = false)
 	private LocalDate donorDob;
 	private String donorBloodGrp;
+	private long phone;
 	private String email;
 	@Column(length = 8, nullable = false)
 	private String password;
